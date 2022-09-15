@@ -1,0 +1,22 @@
+const clickButton = document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ tWDL4c  jh0Tpd Gt6sbf QQrMi")[0]
+const numbers = document.getElementsByClassName("uGOf1d")[0]
+
+function waitToExecute() {
+	if (numbers.innerHTML > 24)
+		setInterval(execute, 5000);
+}
+
+function execute() {
+	if (numbers.innerHTML < 33){
+		close()
+	}
+	else {
+		console.log("Waiting for user leave out")
+	}
+}
+
+function close() {
+	clickButton.click()
+}
+
+waitToExecute()
