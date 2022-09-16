@@ -1,13 +1,13 @@
 const clickButton = document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ tWDL4c  jh0Tpd Gt6sbf QQrMi")[0]
-const numbers = document.getElementsByClassName("uGOf1d")[0]
+const numbers = document.getElementsByClassName("uGOf1d")[0].innerHTML
 
 function waitToExecute() {
-	if (numbers.innerHTML > 24)
+	if (numbers > 24)
 		setInterval(execute, 5000);
 }
 
 function execute() {
-	if (numbers.innerHTML < 33){
+	if (numbers < 33){
 		close()
 	}
 	else {
